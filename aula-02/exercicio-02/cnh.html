@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+</head>
+<body>
+
+    <h1>Exercício 02 - CNH</h1>
+    <hr>
+
+    <label>Selecione sua nacionalidade:</label>
+    <select id="nacionalidade">
+        <option value="" selected disabled style="display: none;">Selecione uma opção</option>
+        <option value="BR">Brasil</option>
+        <option value="CA">Canadá</option>
+        <option value="CH">China</option>
+        <option value="US">Estados Unidos</option>
+        <option value="RU">Rússia</option>
+    </select>
+    <br>
+
+    <span id="espaco-01" style="display: none;"><br></span>
+    <label style="display: none;" id="label">Selecione a categoria:</label>
+    <select id="categoria" style="display: none;">
+        <option value="" selected disabled style="display: none;">Selecione uma opção</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="E">E</option>
+        <option value="AB">AB</option>
+        <option value="AC">AC</option>
+        <option value="AD">AD</option>
+        <option value="AE">AE</option>
+    </select>
+    <span id="espaco-02" style="display: none;"></span>
+    
+    <br>
+    <label>Qual a sua idade?&ensp;</label>
+    <input type="number" style="width: 50px;" min="0" value="18" id="idade">
+    <br><br>
+    <button onclick="verificar()">Verificar</button>
+
+    <script src="cnh.js"></script>
+</body>
+</html>
